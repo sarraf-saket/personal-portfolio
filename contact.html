@@ -162,15 +162,53 @@ footer img{
                 align-items: center;
                 justify-content: center;
             }
+            #map {
+            height: 100%;
+            width: 100%;
+            }
+            .container5 {
+      display: flex;
+      margin-left: 100px; 
+      margin-right: 100px;/* Use flexbox for layout */
+    }
+
+    .item {
+      flex: 1; /* Distribute available space evenly */
+      border: 1px solid black; /* Optional: Add border for visual separation */
+      padding: 10px; /* Optional: Add padding for spacing */
+    }
 
             
             </style>
             </head>
             <body>
+                <h3>Get in touch</h3>
+                <div class="container5">
+                    <div class="item">
+                <div id="map"></div>
+
+                
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0e7OHfbvl1HxXR1ZhYVJ-viI72LJvgj0&callback=initMap" async defer></script>
+              
+                <script>
             
-            <h3>Get in touch</h3>
-            
+                  function initMap() {
+                    
+                    const map = new google.maps.Map(document.getElementById('map'), {
+                      center: { lat: 25.264195, lng: 82.985073 }, 
+                      zoom: 12 // Example: Zoom level
+                    });
+              
+                    // Add additional map functionality or markers here
+                  }
+                </script>
+                </div>
+
+        
+                <div class="item">
+                    
             <div class="container2">
+                
                 <form onsubmit="sendemail();reset(); return false;">
              <input type="text" id="name"placeholder ="your name"required>
              <input type="text" id="email"placeholder ="email id"required>
@@ -178,6 +216,8 @@ footer img{
              <textarea name="message" rows="4" placeholder = "how can we help you"></textarea>
              <button type = "submit">send</button>
             </form>
+            </div>
+            </div>
             </div>
         <footer>
             <div class = "column1">
