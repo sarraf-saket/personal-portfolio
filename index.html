@@ -1,120 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>my portfolio page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<style>
-    body {
-        background-image: url('images/background8.jpg');
-      background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devloper portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:ital,wght@0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(29, 29, 83);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: centre;
+            height: 60px;
+            background-color: rgb(27, 27, 121);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: centre;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-top: 10px;
+            margin-left: 0;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(82, 82, 155);
+            font-size: 1.08rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 98px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(152, 51, 152);
+        }
+
+        #element {
+            color: rgb(152, 51, 152);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin:auto;
+        }
+        main hr{
+            border: 0;
+            height: 1.2px;
+            margin: 60px 84px;
+            background: rgb(116, 63, 116);
+        }
+        footer {
+  text-align: center;
+  padding: 23px;
+  background-color:rgb(27, 27, 121);
   color: white;
-    }
-    </style>
-<body>
-        <style>
-            img {
-                display: block;
+}
+footer img{
+    display: block;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 50%;
                 object-fit: cover;
-            }
-            </style>
-           <style>
-           h1 {
-            margin-top: 60px;
-                text-align: center;
-              }
-              
-  h4{ margin-top: 25px;
+}
+.column1{
+    float: right;
     margin-right: 100px;
-  margin-left: 100px;
-  font-family: 'Merriweather', serif;
-  
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container4 {
+  position: relative;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
 
-            }
-            p{
-                margin-bottom: 30px;
-            }
-              </style>
-              
-              
-            
-            
-        <img src="images/saket.jpg" class="float-start" alt="pic"  width="300" height="300" >
-        
-            <h1>Introduction</h1>
-          </div>
-        <h4> Welcome to my portfolio website! I am Saket Sarraf, a dedicated and passionate student pursuing Electronics at the prestigious Indian Institute of Technology (IIT) Varanasi. Hailing from Lalitpur, Uttar Pradesh, I am driven by a deep curiosity for technology and a desire to create innovative solutions.</h4>
-        <img src="images/interest.jpg" class="float-end" alt="pic"  width="300" height="300" >
-        
-            <h1>Interest</h1>
-          </div>
-        <h4>
-            Alongside my academic pursuits, I have developed a keen interest in the intersection of technology and business. Exploring the realms of entrepreneurship, I am fascinated by the potential to leverage technology to drive positive change and create impactful ventures. I believe that through the integration of business acumen and technical expertise, we can bring innovative ideas to life and shape a better future.
-        </h4>
-        <h4>
-            Another area that captivates me is web designing. I find joy in crafting visually appealing and user-friendly interfaces that enhance the digital experience. The power of design to communicate and engage inspires me to create seamless and intuitive websites that leave a lasting impression.
-        </h4>
-        <img src="images/contactme.jpeg" alt="pic"  width="300" height="300" >
+.container4:hover .overlay {
+  opacity: 1;
+}
+    </style>
+</head>
 
-        
-            <h1>contact me</h1>
-            <style>
-            h4{
-                margin-left : 130px;}
-              </style>
-          </div>
-            
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                
-                <p><a href="https://github.com/sarraf-saket">
-                    <img src="images/github.png" alt="github" width="100" height="100">
-                    </a></p>
-                
-                    
-              </div>
-              <div class="col-sm-3">
-                
-                <p><a href="saketsarraf1008@gmail.com">
-                    <img src="images/gmail.jpeg" alt="github" width="100" height="100">
-                    </a></p>
-                    
-              </div>
-              <div class="col-sm-3">
-       
-                <p><a href="https://www.linkedin.com/in/saket-sarraf-b6436224b/">
-                    <img src="images/linkedin.png" alt="linkedin" width="100" height="100">
-                    </a></p>
-                     
-              </div>
-              <div class="col-sm-3">
-       
-                <p><a href="https://www.instagram.com/sarrafsaket/">
-                    <img src="images/insta.jpeg" alt="instagram" width="100" height="100">
-                    </a></p>
-                     
-              </div>
+<body>
+    <header>
+        <nav>
+            <div class="left"><img src="logo.jpg" alt="" width="60px" height="60px">
+                saket's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="portfolio.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="project.html">project</a></li>
+                    <li><a href="contact.html">contact me</a></li>
+                </ul>
             </div>
-          </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                hi,my name is <span class="purple">saket sarraf</span>
+
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <div class="container4">
+                    <img src="me.jpg" alt="Avatar" class="image">
+                    <div class="overlay">that's me!!!</div>
+                  </div>
+                  
         
-          </body>
-          </html>
-          
-    </body>
+
+            </div>
+        </section>
+        <footer>
+            <div class = "column1">
+            <p><a href="https://github.com/sarraf-saket">
+                <img src="github.png" alt="github" width="35" height="35">
+                </a></p></div>
+                <div class = "column1">
+                <p><a href="https://www.instagram.com/sarrafsaket/">
+                    <img src="insta.jpeg" alt="instagram" width="35" height="35">
+                    </a></p></div>
+                    <div class = "column1">
+                    <p><a href="https://www.linkedin.com/in/saket-sarraf-b6436224b/">
+                        <img src="linkedin.png" alt="linkedin" width="35" height="35">
+                        </a></p></div>
+                        <div class = "column1">
+                        <p><a href="saketsarraf1008@gmail.com">
+                            <img src="gmail.jpeg" alt="github" width="35" height="35">
+                            </a></p></div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer.', 'business enthusiastic.', 'c++ coder.'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
 </html>
