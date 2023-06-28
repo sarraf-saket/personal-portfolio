@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devloper portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:ital,wght@0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(29, 29, 83);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: centre;
+            height: 60px;
+            background-color: rgb(27, 27, 121);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: centre;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-top: 10px;
+            margin-left: 0;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(82, 82, 155);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 98px 0;
+        }
+        #element {
+            color: rgb(152, 51, 152);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin:auto;
+        }
+        
+        footer {
+  text-align: center;
+  padding: 23px;
+  background-color:rgb(27, 27, 121);
+  color: white;
+}
+footer img{
+    display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 50%;
+                object-fit: cover;
+}
+.column1{
+    float: right;
+    margin-right: 100px;
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><img src="logo.jpg" alt="" width="60px" height="60px">saket's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="project.html">project</a></li>
+                    <li><a href="contact.html">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <style>
+             form{
+                background: white;
+                display: flex;
+                flex-direction: column;
+                padding: 2vw 4vw;
+                width: 90%;
+                max-width: 600px;
+                border-radius: 10px;
+            }
+
+            h3{
+                margin-top: 20px;
+                margin-bottom:20px;
+
+            }
+            form input,form textarea{
+                border: 0;
+                margin: 10px 0;
+                padding: 20px;
+                outline: none;
+                background: #f5f5f5;
+                font-size: 16px;
+            }
+            form button{
+                padding: 15px;
+                background: #ff5361;
+                color: #fff;
+                font-size: 18px;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                width: 150px;
+                margin: 20px auto 0;
+                border-radius: 30px;
+            }
+
+
+            h3{
+                margin-top: 20px;
+                margin-bottom:20px;
+                text-align: center;
+            }
+            .container2{
+               
+                width: 100%;
+                height: 100%;
+                background: #001660;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+            </style>
+            </head>
+            <body>
+            
+            <h3>Get in touch</h3>
+            
+            <div class="container2">
+                <form onsubmit="sendemail();reset(); return false;">
+             <input type="text" id="name"placeholder ="your name"required>
+             <input type="text" id="email"placeholder ="email id"required>
+             <input type="text" id="phone"placeholder ="phone no."required>
+             <textarea name="message" rows="4" placeholder = "how can we help you"></textarea>
+             <button type = "submit">send</button>
+            </form>
+            </div>
+        <footer>
+            <div class = "column1">
+                
+            <p><a href="https://github.com/sarraf-saket">
+                <img src="github.png" alt="github" width="35" height="35">
+                </a></p></div>
+                <div class = "column1">
+                <p><a href="https://www.instagram.com/sarrafsaket/">
+                    <img src="insta.jpeg" alt="instagram" width="35" height="35">
+                    </a></p></div>
+                    <div class = "column1">
+                    <p><a href="https://www.linkedin.com/in/saket-sarraf-b6436224b/">
+                        <img src="linkedin.png" alt="linkedin" width="35" height="35">
+                        </a></p></div>
+                        <div class = "column1">
+                        <p><a href="saketsarraf1008@gmail.com">
+                            <img src="gmail.jpeg" alt="github" width="35" height="35">
+                            </a></p></div>
+                        
+        </footer>
+    </main>
+<script src = " https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendemail(){
+        Email.send({
+            SecureToken:"b4c63412-cda9-4dd2-95fd-b953f2809393",
+    To : 'saketsarraf1008@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "new contact form enquiry",
+    Body : "Name "+getElementById("name").value
+    +"</br> Email "+getElementById("email").value
+    +"</br> phone no. "+getElementById("phone").value
+    +"</br> message "+getElementById("message").value
+}).then(
+  message => alert("message sent succesfully")
+);
+    }
+</script>
+</body>
+
+</html>
